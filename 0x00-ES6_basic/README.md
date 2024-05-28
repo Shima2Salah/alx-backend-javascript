@@ -39,11 +39,13 @@ npx clear-npx-cache
 
 npm install
 npm fund
-npm run lint 1-block-scoped.js
+npm run lint 3-default-parameter.js
+npx eslint --fix 3-default-parameter.js
+
 npm init @eslint/config
 nodejs -v
 npm -v
-npm run dev 0-main.js
+npm run dev 2-arrow.js
 npm audit fix --force
 npm install inflight@latest rimraf@latest glob@latest
 npm install eslint-config-airbnb-base@latest eslint-plugin-import@latest eslint-plugin-n@latest
