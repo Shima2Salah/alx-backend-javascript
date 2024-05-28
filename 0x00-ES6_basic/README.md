@@ -1,5 +1,18 @@
 This is my first project 0x00. ES6 Basics
 _____________________
+curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install 12.11
+    node -v
+    npm -v
+_________________________________________________________________
+
+//false
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
 
@@ -39,8 +52,8 @@ npx clear-npx-cache
 
 npm install
 npm fund
-npm run lint 3-default-parameter.js
-npx eslint --fix 3-default-parameter.js
+npm run lint 1-block-scoped.js
+npx eslint --fix 1-block-scoped.js
 
 npm init @eslint/config
 nodejs -v
@@ -58,8 +71,3 @@ npm install --save-dev jest
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm install 12.11
