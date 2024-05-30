@@ -12,5 +12,6 @@ npm install
     node -v
     npm -v
 
-npm run lint 1-block-scoped.js
-npx eslint --fix 1-block-scoped.js
+npm run dev 1-main.js 
+npm run lint 1-make_classrooms.js
+npx eslint --fix 1-make_classrooms.js
