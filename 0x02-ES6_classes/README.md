@@ -12,6 +12,6 @@ npm install
     node -v
     npm -v
 
-npm run dev 1-main.js 
-npm run lint 1-make_classrooms.js
-npx eslint --fix 1-make_classrooms.js
+npm run dev 2-main.js 
+npm run lint 2-hbtn_course.js
+npx eslint --fix 2-hbtn_course.js
