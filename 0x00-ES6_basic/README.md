@@ -11,8 +11,8 @@ nvm install 12.11
     node -v
     npm -v
 
-npm run lint 1-block-scoped.js
-npx eslint --fix 1-block-scoped.js
+npm run lint 101-iterateThroughObject.js
+npx eslint --fix 101-iterateThroughObject.js
 _________________________________________________________________
 
 //false
