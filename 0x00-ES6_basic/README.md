@@ -10,6 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 12.11
     node -v
     npm -v
+
+npm run lint 1-block-scoped.js
+npx eslint --fix 1-block-scoped.js
 _________________________________________________________________
 
 //false
