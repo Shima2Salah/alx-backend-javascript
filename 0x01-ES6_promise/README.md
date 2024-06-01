@@ -14,5 +14,5 @@ nvm install 12.11
     node -v
     npm -v
 
-npm run lint 1-block-scoped.js
-npx eslint --fix 1-block-scoped.js
+npm run lint 2-then.js
+npx eslint --fix 2-then.js
