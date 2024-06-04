@@ -3,5 +3,5 @@ export default function getStudentIdsSum(argument) {
     return [];
   }
 
-  return argument.map((a) => a.id).reduce((a, b) => a + b);
+  return argument.reduce((a, b) => a.id || a + b.id, 0,);
 }
