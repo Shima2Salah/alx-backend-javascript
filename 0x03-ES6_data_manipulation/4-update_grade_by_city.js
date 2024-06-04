@@ -1,13 +1,32 @@
-Create a function updateStudentGradeByCity that returns an array of students for a specific city with their new grade
+/**
+ * Updates the grades of a list of students in a given city.
+ * @param {{
+ *   id: Number,
+ *   firstName: String,
+ *   location: String
+ * }[]} students - The list of students.
+ * @param {*} city - The city of students.
+ * @param {{
+ *   studentId: Number,
+ *   grade: Number,
+ * }[]} newGrades - The new grades to be given to a student.
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @returns {{id: Number, firstName: String, location: String}[]}
+ */
+export default function updateStudentGradeByCity(students, city, newGrades) {
+  const defaultGrade = { grade: 'N/A' };
 
-It should accept a list of students (from getListStudents), a city (String), and newGrades (Array of “grade” objects) as parameters.
-
-newGrades is an array of objects with this format:
-
-  {
-    studentId: 31,
-    grade: 78,
+  if (students instanceof Array) {
+    return students
+      .filter((student) => student.location === city)
+      .map((student) => ({
+        id: student.id,
+        firstName: student.firstName,
+        location: student.location,
+        grade: (newGrades
+          .filter((grade) => grade.studentId === student.id)
+          .pop() || defaultGrade).grade,
+      }));
   }
-If a student doesn’t have grade in newGrades, the final grade should be N/A.
-
-You must use filter and map combined.
+  return [];
+}
