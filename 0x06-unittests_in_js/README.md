@@ -15,6 +15,14 @@ This project contains tasks for learning to create unittests in NodeJS.
 
 ## Tasks To Complete
 
+npm install --save-dev mocha
+package.json
+npm test 0-calcul.test.js
+npm install --save-dev chai
+npm test 2-calcul_chai.test.js
+npm install --save-dev sinon
+
+
 + [x] 0. **Basic test with Mocha and Node assertion library**
   + **Install Mocha using npm:**
     + Set up a scripts in your [`package.json`](package.json) to quickly run Mocha using `npm test`.
